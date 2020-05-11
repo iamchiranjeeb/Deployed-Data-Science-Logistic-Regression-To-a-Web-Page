@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+  <title>Deploying LogisticRegression</title>
+</head>
+<body>
+  <h1>Predict Page</h1>
+  <form action="predict" method="POST">
+    <label for="Age">Age</label> &nbsp; &nbsp; &nbsp; &nbsp;
+    <input placeholder="Enter Your Name" id="Age" name="Age">
+    <br>
+    <label for="Est_salary">Salary</label> &nbsp; &nbsp;
+    <input placeholder="Enter Your Salary" id="Est_salary" name="Est_salary">
+    <br>
+    <label for ="male">Gender</label> &nbsp;
+    <input placeholder="Enter Your Gender" id='male' name="male">
+    <h6> For Male : 1 & For Female:0 </h6>
+    <br>
+    <br>
+    <button type="submit">Predict</button>
+  </form>
+  <br>
+  <h2 style="color:red">{{ans}}</h2>
+  <br>
+  <h2 style="color:blue">{{atext}}</h2>
+</body>
